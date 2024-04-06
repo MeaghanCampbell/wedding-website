@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <main>
-    Hello from travel
+  <main class="gradient-background">
+    <section class="px-4 sm:px-8 py-14 sm:py-20 max-w-5xl mx-auto">
+      Hello from travel
+    </section>
   </main>
 </template>

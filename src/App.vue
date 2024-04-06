@@ -12,3 +12,4 @@ import Nav from './components/Nav.vue'
 
   <RouterView />
 </template>
+
