@@ -2,17 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-.prata-regular {
-    font-family: "Prata", serif;
+
+.fraunces-regular {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+
+  .fraunces-bold {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+  
+
 
 .bg-color {
     background-color: #c8d9e1;
 }   
 
 .gradient-background {
-    background: linear-gradient(to bottom, #c8d9e1 0%, #ffffff 30%);
+    background: linear-gradient(to bottom, #c8d9e1 0%, #ffffff 50%);
     height: 100vh; /* Adjust as needed */
+}
+
+.text-gradient {
+    --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
+    --tw-gradient-to: #b2d8ec var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.normal-text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.montserrat-light {
+    font-weight: 300;
+}
+
+.montserrat-regular {
+    font-weight: 400;
+}
+
+.montserrat-bold {
+    font-weight: 600;
 }
