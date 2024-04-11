@@ -83,6 +83,10 @@
     background-color: rgba(143,163,217,0.55);
 }
 
+.bottom-border {
+    border-bottom: 1px solid rgba(143,163,217,0.55);
+}
+
 .btn-bg:hover {
     background-color: rgba(143,163,217,0.4);
 }
@@ -91,6 +95,9 @@
     background-color: #ebe9e3;
 }
 
+
 .input-height {
-    max-height:1.5em;
+    height:1.5em;
+    width: 1.5em;
 }
+
