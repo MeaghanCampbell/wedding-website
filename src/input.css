@@ -2,30 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .fraunces-regular {
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-variation-settings:
-      "SOFT" 0,
-      "WONK" 0;
-  }
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+}
 
-  .fraunces-bold {
+.fraunces-bold {
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-      "SOFT" 0,
-      "WONK" 0;
-  }
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+}
   
 .gradient-background {
     background: linear-gradient(to bottom, #cad3ec 0%, #ebe9e3 30%);
-    height: 100vh; /* Adjust as needed */
+    min-height: 100vh;
 }
 
 .text-gradient {
@@ -57,37 +52,45 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .playfair-italic {
+.playfair-italic {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-  }
+}
 
-  .playfair-bold {
+.playfair-bold {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
-  }
+}
 
-  .playfair-bold-italic {
+.playfair-bold-italic {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: italic;
-  }
+}
 
-  .blue {
+.blue {
     color: #455EB6;
-  }
+}
 
-  .btn-bg {
+.btn-bg {
     background-color: rgba(143,163,217,0.55);
-  }
+}
 
-  .btn-bg:hover {
+.btn-bg:hover {
     background-color: rgba(143,163,217,0.4);
-  }
+}
+
+.white-background {
+    background-color: #ebe9e3;
+}
+
+.input-height {
+    max-height:1.5em;
+}

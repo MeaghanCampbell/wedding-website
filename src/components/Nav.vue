@@ -1,6 +1,5 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-
+    import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -20,14 +19,12 @@ import { RouterLink } from 'vue-router'
             <p class="text-center">RSVP</p>
         </RouterLink>
     </nav>
+
     <!-- mobile nav -->
     <nav class="md:hidden pt-7 normal-text uppercase px-4 sm:px-8" id="mobile-menu">
         <div>
             mobile menu
         </div>
     </nav>
+
 </template>
-
-<style>
-
-</style>
