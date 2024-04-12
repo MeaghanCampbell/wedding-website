@@ -95,9 +95,16 @@
     background-color: #ebe9e3;
 }
 
-
 .input-height {
     height:1.5em;
     width: 1.5em;
+}
+
+.bg-blue {
+    background-color: #455eb6;
+}
+
+.white {
+    color: #ebe9e3;
 }
 

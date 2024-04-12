@@ -5,23 +5,27 @@
 
     const targetDate = new Date('June 6, 2025 17:00:00 EDT');
     const timer = reactive({
-      months: 0,
       days: 0,
       hours: 0,
+      minutes: 0,
     });
 
     let intervalId;
 
     onMounted(() => {
-      intervalId = setInterval(() => {
-        const now = new Date();
-        const diff = targetDate - now;
+  intervalId = setInterval(() => {
+    const now = new Date();
+    const diff = Math.abs(targetDate - now);
 
-        timer.months = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24 * 30))).toString().padStart(2, '0');
-        timer.days = Math.max(0, Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24))).toString().padStart(2, '0');
-        timer.hours = Math.max(0, Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).toString().padStart(2, '0');
-      }, 1000);
-    });
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+    timer.days = Math.max(0, days).toString().padStart(2, '0');
+    timer.hours = Math.max(0, hours).toString().padStart(2, '0');
+    timer.minutes = Math.max(0, minutes).toString().padStart(2, '0');
+  }, 1000);
+});
 
     onUnmounted(() => {
       clearInterval(intervalId);
@@ -37,7 +41,7 @@
           <section class="px-4 sm:px-8 py-14 sm:py-20 max-w-5xl mx-auto">
 
               <!-- text section -->
-              <div class="text-center space-y-5 blue inline-flex flex-col justify-center items-center w-full" style="height:50vh;">
+              <div class="text-center space-y-3 blue inline-flex flex-col justify-center items-center w-full" style="height:50vh;">
                   <p class="text-5xl sm:text-6xl playfair-bold uppercase">Meaghan <span class="fraunces-bold">&</span> Graham</p>
                   <p class="text-xl">June 6th, 2024</p>
                   <p class="text-xl pb-1">Corolla, North Carolina</p>
@@ -50,17 +54,17 @@
               <div class="fixed inset-x-0 bottom-0">
                   <div class="px-4 sm:px-8">
                       <div class="flex items-center playfair-regular text-7xl md:text-8xl xl:text-9xl text-transparent bg-clip-text bg-gradient-to-l text-gradient py-7 max-w-xl">
-                          <div class="flex flex-col items-center">
-                              <p>{{ timer.months }}:</p>
-                              <p class="text-xl sm:text-2xl mt-3 tracking-wide playfair-bold">months</p>
-                          </div>
-                          <div class="flex flex-col items-center">
+                          <div class="flex flex-col items-center justify-start">
                               <p>{{ timer.days }}:</p>
                               <p class="text-xl sm:text-2xl mt-3 tracking-wide playfair-bold">days</p>
                           </div>
                           <div class="flex flex-col items-center">
-                              <p>{{ timer.hours }}</p>
-                              <p class="text-xl sm:text-2xl mt-3 tracking-wide playfair-bold">hours</p>
+                              <p>{{ timer.hours }}:</p>
+                              <p class="text-xl sm:text-2xl mt-3 tracking-wide playfair-bold -ml-4">hours</p>
+                          </div>
+                          <div class="flex flex-col items-center">
+                              <p>{{ timer.minutes }}</p>
+                              <p class="text-xl sm:text-2xl mt-3 tracking-wide playfair-bold">minutes</p>
                           </div>
                       </div>
                   </div>
