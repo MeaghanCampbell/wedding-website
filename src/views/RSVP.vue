@@ -28,10 +28,10 @@
         });
     };
 
-    const submitRSVP = () => {
+    const submitRSVP = function() {
         console.log(attendingResults)
+    }
 
-    };
 </script>
 
 <template>
