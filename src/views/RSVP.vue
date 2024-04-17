@@ -28,8 +28,35 @@
         });
     };
 
+    // issues to resolve, success messaging, error messaging, clearning out attending results if they want to submit twice.
     const submitRSVP = function() {
-        console.log(attendingResults)
+        // Transform attendingResults into an array of arrays
+        const values = Object.values(attendingResults).map(member => [member.name, member.thursday, member.friday]);
+
+        fetch('https://wedding-server-ebon.vercel.app/api/updateSpreadsheet', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ values }),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            // Provide success feedback to the user
+            // For example, show a success message or redirect to a thank you page
+
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            // Provide error feedback to the user
+            // For example, show an error message on the page
+        });
     }
 
 </script>
