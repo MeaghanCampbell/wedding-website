@@ -108,3 +108,17 @@
     color: #ebe9e3;
 }
 
+.icon-width {
+    max-width:3.5em;
+    min-width:3.5em;
+}
+
+.blue-top-border {
+    border-top: 1px solid rgba(143,163,217,0.4);
+}
+
+@media screen and (min-width:776px) {
+    .blue-right-border {
+        border-right: 1px solid rgba(143,163,217,0.4);
+    }
+}
