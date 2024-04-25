@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/Travel.vue')
     },
     {
+      path: '/things-to-do',
+      name: 'Things to Do',
+      component: () => import('../views/Things.vue')
+    },
+    {
       path: '/details',
       name: 'Details',
       component: () => import('../views/Details.vue')
@@ -25,9 +30,9 @@ const router = createRouter({
       component: () => import('../views/RSVP.vue')
     },
     {
-      path: '/our-story',
-      name: 'Our Story',
-      component: () => import('../views/OurStory.vue')
+      path: '/photos',
+      name: 'Photos',
+      component: () => import('../views/Photos.vue')
     },
     {
       path: '/registry',

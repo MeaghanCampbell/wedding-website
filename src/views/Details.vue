@@ -7,11 +7,11 @@
 
         <Nav />
 
-        <section class="px-4 sm:px-8 py-14 sm:py-20 max-w-3xl mx-auto">
+        <section class="px-4 sm:px-8 py-14 sm:py-16 max-w-3xl mx-auto">
 
             <!-- Thursday -->
             <div class="flex flex-col md:flex-row md:justify-between blue">
-                <div class="pb-4 md:pb-0 md:w-96 blue-right-border">
+                <div class="pb-4 md:pb-0 md:w-96">
                     <p class="text-2xl playfair-bold">THURSDAY, June 5th</p>
                     <p class="text-lg">The Pine Island Lodge</p>
                     <p class="font-semibold italic">Attire: <span class="font-normal">Dressy Casual</span></p>
@@ -29,7 +29,7 @@
 
             <!-- Friday -->
             <div class="flex flex-col md:flex-row md:justify-between blue pt-5 mt-5 blue-top-border">
-                <div class="pb-4 md:pb-0 md:w-96 blue-right-border">
+                <div class="pb-4 md:pb-0 md:w-96">
                     <p class="text-2xl playfair-bold">FRIDAY, June 6th</p>
                     <p>The Pine Island Lodge</p>
                     <p class="font-semibold italic">Attire: <span class="font-normal">Cocktail</span></p>
@@ -58,7 +58,7 @@
 
             <!-- Saturday -->
             <div class="flex flex-col md:flex-row md:justify-between blue pt-5 mt-5 blue-top-border">
-                <div class="pb-4 md:pb-0 md:w-96 blue-right-border">
+                <div class="pb-4 md:pb-0 md:w-96">
                     <p class="text-2xl playfair-bold">SATURDAY, June 7th</p>
                     <p>The Pine Island Lodge Beach</p>
                     <p class="font-semibold italic">Attire: <span class="font-normal">Beachwear</span></p>

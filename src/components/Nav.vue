@@ -11,7 +11,7 @@
 
 <template>
     <!-- desktop nav -->
-    <nav class="hidden md:flex justify-between tracking-wide items-center pt-7 normal-text uppercase px-4 sm:px-8">
+    <nav class="hidden lg:flex justify-between tracking-wide items-center pt-7 normal-text uppercase px-4 sm:px-8">
         <RouterLink to="/" class="blue w-24 text-2xl playfair-bold">
             <p>M<span class="fraunces-regular">&</span>G</p>
         </RouterLink>
@@ -19,7 +19,8 @@
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/details">Details</RouterLink>
             <RouterLink to="/travel">Travel</RouterLink>
-            <RouterLink to="/our-story">Our Story</RouterLink>
+            <RouterLink to="/things-to-do">Things to Do</RouterLink>
+            <RouterLink to="/photos">Photos</RouterLink>
             <RouterLink to="/registry">Registry</RouterLink>
         </div>
         <RouterLink to="/rsvp" class="blue px-4 py-2 rounded btn-bg transition inline-flex montserrat-bold tracking-wide text-xl">
@@ -28,10 +29,10 @@
     </nav>
 
     <!-- mobile nav -->
-    <nav class="bg-blue md:hidden normal-text uppercase">
+    <nav class="bg-blue lg:hidden normal-text uppercase">
 
         <div class="relative flex h-16 items-center justify-between px-4">
-            <div class="inset-y-0 left-0 flex items-center sm:hidden">
+            <div class="inset-y-0 left-0 flex items-center lg:hidden">
                 <!-- Mobile menu button-->
                 <button type="button" @click="toggleNav" class="relative inline-flex items-center justify-center rounded-md p-2 white" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="absolute -inset-0.5"></span>
@@ -48,12 +49,13 @@
 
         <!-- Menu open  -->
         <transition>
-            <div class="md:hidden px-4 absolute z-50 bg-blue w-full" id="mobile-menu" v-if="navOpen">
+            <div class="lg:hidden px-4 absolute z-50 bg-blue w-full" id="mobile-menu" v-if="navOpen">
                 <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col">
                     <RouterLink to="/" class="white py-2 font-bold tracking-wide">Home</RouterLink>
                     <RouterLink to="/details" class="white py-2 font-bold tracking-wide">Details</RouterLink>
                     <RouterLink to="/travel" class="white py-2 font-bold tracking-wide">Travel</RouterLink>
-                    <RouterLink to="/our-story" class="white py-2 font-bold tracking-wide">Our Story</RouterLink>
+                    <RouterLink to="/things-to-do" class="white py-2 font-bold tracking-wide">Things to Do</RouterLink>
+                    <RouterLink to="/photos" class="white py-2 font-bold tracking-wide">Photos</RouterLink>
                     <RouterLink to="/registry" class="white py-2 font-bold tracking-wide">Registry</RouterLink>
                     <RouterLink to="/rsvp" class="white py-2 font-bold tracking-wide">RSVP</RouterLink>
                 </div>

@@ -7,7 +7,7 @@
 
         <Nav />
 
-        <section class="px-4 sm:px-8 py-14 sm:py-20 max-w-5xl mx-auto">
+        <section class="px-4 sm:px-8 py-14 sm:py-16 max-w-5xl mx-auto">
             <p class="text-3xl sm:text-4xl montserrat-light text-center blue">Registry coming <span class="playfair-italic">soon.</span></p>
         </section>
       

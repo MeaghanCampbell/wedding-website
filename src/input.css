@@ -122,3 +122,29 @@
         border-right: 1px solid rgba(143,163,217,0.4);
     }
 }
+
+.image-grid {
+    column-gap: .5em;
+    margin-bottom: .5em;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    break-inside: avoid;
+    margin-bottom: .5em;
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        column-count: 2;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .image-grid {
+        column-count: 4;
+    }
+}
