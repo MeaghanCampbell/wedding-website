@@ -79,7 +79,7 @@
 <style>
     .image-bg {
         position: relative;
-        background-image: url('../assets/home-photo.webp');
+        background-image: url('../assets/ocean-photo.jpg');
         background-size: cover;
         background-position: top;
         height: 100vh; /* Adjust as needed */
