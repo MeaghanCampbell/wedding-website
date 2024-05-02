@@ -1,37 +1,27 @@
 const guestList = [
-    {
-      members: [
-        { name: "Elizabeth Martin", thursdayDinner: true },
-        { name: "Alex Martin", thursdayDinner: true },
-        { name: "Selah Martin", thursdayDinner: true },
-        { name: "Hayes Martin", thursdayDinner: true },
-        { name: "Elle Martin", thursdayDinner: true },
-      ]
-    },
-    {
-        members: [
-          { name: "Sarah Mosteller", thursdayDinner: true },
-          { name: "Scott Meadows", thursdayDinner: true },
-        ]
-    },
-    {
-        members: [
-          { name: "Katherine Meadows", thursdayDinner: true },
-          { name: "Doug Meadows", thursdayDinner: true },
-        ]
-    },
-    {
-        members: [
-          { name: "Scott Campbell", thursdayDinner: true },
-          { name: "Marcie McNary", thursdayDinner: true },
-        ]
-    },
-    {
-        members: [
-          { name: "Liam Campbell", thursdayDinner: false },
-          { name: "Gracie Kinyon", thursdayDinner: false },
-        ]
-    },
-  ];
+  [
+    "Elizabeth Martin", 
+    "Alex Martin", 
+    "Selah Martin", 
+    "Hayes Martin", 
+    "Elle Martin"
+  ],
+  [
+    "Sarah Mosteller", 
+    "Scott Meadows"
+  ],
+  [
+    "Katherine Meadows"
+    , "Doug Meadows"
+  ],
+  [
+    "Scott Campbell", 
+    "Marcie McNary"
+  ],
+  [
+    "Liam Campbell", 
+    "Gracie Kinyon"
+  ]
+];
   
   export default guestList;

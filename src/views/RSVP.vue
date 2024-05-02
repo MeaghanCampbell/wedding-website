@@ -19,16 +19,16 @@
         invite.value = true
         const fullName = `${firstName.value} ${lastName.value}`.toLowerCase();
         searchResults.value = guestList.filter(party => 
-            party.members.some(member => 
-                member.name.toLowerCase().includes(fullName)
+            party.some(member => 
+                member.toLowerCase().includes(fullName)
             )
         );
         showError.value = searchResults.value.length === 0;
 
         // Initialize attendingResults for each member
         searchResults.value.forEach(party => {
-            party.members.forEach(member => {
-                attendingResults[member.name] = { name: member.name, thursday: false, friday: false };
+            party.forEach(member => {
+                attendingResults[member] = { name: member, thursday: false, friday: false };
             });
         });
     };
@@ -101,12 +101,12 @@
                             <p>Attending<br />Thursday</p>
                             <p>Attending<br />Friday</p>
                         </div>
-                        <div v-for="party in searchResults" :key="party.partyName">
+                        <div v-for="(party, partyIndex) in searchResults" :key="partyIndex">
                             <ul class="space-y-3">
-                                <li v-for="(member, index) in party.members" :key="member.name" class="grid grid-cols-4">
-                                    <p class="col-span-2">{{ member.name }}</p>
-                                    <input class="input-height" type="checkbox" v-model="attendingResults[member.name].thursday" />
-                                    <input class="input-height" type="checkbox" v-model="attendingResults[member.name].friday" />
+                                <li v-for="(member, memberIndex) in party" :key="memberIndex" class="grid grid-cols-4">
+                                    <p class="col-span-2">{{ member }}</p>
+                                    <input class="input-height" type="checkbox" v-model="attendingResults[member].thursday" />
+                                    <input class="input-height" type="checkbox" v-model="attendingResults[member].friday" />
                                 </li>
                             </ul>
                         </div>
