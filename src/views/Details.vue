@@ -6,8 +6,8 @@
     <main class="gradient-background">
 
         <Nav />
-
-        <section class="px-4 sm:px-8 py-14 sm:py-16 max-w-3xl mx-auto">
+        
+        <section class="px-4 sm:px-8 py-14 sm:py-16 max-w-3xl mx-auto fade-in-smooth">
 
             <!-- Thursday -->
             <div class="flex flex-col md:flex-row md:justify-between blue">

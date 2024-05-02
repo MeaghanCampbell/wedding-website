@@ -38,7 +38,7 @@
 
           <Nav />
 
-          <section class="px-4 sm:px-8 py-14 sm:py-20 max-w-5xl mx-auto">
+          <section class="px-4 sm:px-8 py-14 sm:py-20 max-w-5xl mx-auto fade-in-smooth">
 
               <!-- text section -->
               <div class="text-center space-y-3 blue inline-flex flex-col justify-center items-center w-full" style="height:50vh;">

@@ -148,3 +148,23 @@
         column-count: 4;
     }
 }
+
+.fade-in {
+    opacity: 0;
+    transition: 1s all ease-out;
+}
+
+  .fade-in-smooth {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
