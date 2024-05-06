@@ -11,8 +11,8 @@ const guestList = [
     "Scott Meadows"
   ],
   [
-    "Katherine Meadows"
-    , "Doug Meadows"
+    "Katherine Meadows",
+    "Doug Meadows"
   ],
   [
     "Scott Campbell", 
