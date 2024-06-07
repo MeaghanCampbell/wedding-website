@@ -306,6 +306,23 @@ const guestList = [
   [
     "Cody Wendel",
     "Nidhi Patel"
+  ],
+  [
+    "Alexander Yokum",
+    "Jackie Yokum"
+  ],
+  [
+    "Dakota Burrell",
+    "Kayla Sherman"
+  ],
+  [
+    "Quint Cottingham"
+  ],
+  [
+    "Jason Wiley"
+  ],
+  [
+    "Bryan Triebert"
   ]
 ];
   
