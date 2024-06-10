@@ -323,6 +323,25 @@ const guestList = [
   ],
   [
     "Bryan Triebert"
+  ],
+  [
+    "Ray Aguero",
+    "Brittany Simison"
+  ],
+  [
+    "Noel Burt",
+    "Beth Burt"
+  ],
+  [
+    "Andrea Wilhelm",
+    "Allen Wilhelm"
+  ],
+  [
+    "Marty Benshoff",
+    "Lori Benshoff"
+  ],
+  [
+    "Samantha Presti"
   ]
 ];
   
