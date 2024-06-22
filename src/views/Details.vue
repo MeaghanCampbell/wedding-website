@@ -1,9 +1,11 @@
 <script setup>
     import Nav from '../components/Nav.vue'
+    import Footer from '../components/Footer.vue'
+
 </script>
 
 <template>
-    <main class="gradient-background">
+    <main class="gradient-background flex flex-col min-h-screen">
 
         <Nav />
         
@@ -14,7 +16,7 @@
                 <div class="pb-4 md:pb-0 md:w-96">
                     <p class="text-2xl playfair-bold">THURSDAY, June 5th</p>
                     <p class="text-lg">The Pine Island Lodge</p>
-                    <p class="font-semibold italic">Attire: <span class="font-normal">Dressy Casual</span></p>
+                    <p class="font-semibold italic">Attire: <span class="font-normal">Cocktail</span></p>
                 </div>
                 <div class="space-y-6 md:w-72">
                     <div class="flex items-center">
@@ -32,7 +34,7 @@
                 <div class="pb-4 md:pb-0 md:w-96">
                     <p class="text-2xl playfair-bold">FRIDAY, June 6th</p>
                     <p>The Pine Island Lodge</p>
-                    <p class="font-semibold italic">Attire: <span class="font-normal">Cocktail</span></p>
+                    <p class="font-semibold italic">Attire: <span class="font-normal">Seaside Formal*</span></p>
                 </div>
                 <div class="space-y-6 md:w-72">
                     <div class="flex items-center">
@@ -74,7 +76,13 @@
                 </div>
             </div>
 
+            <div class="mt-8">
+                <p class="blue italic text-sm">*We don't care what you wear as long as you feel your best, but we thought this could be a fun opportunity to dress up if you choose. Join us in wearing something something fancy and beachy!</p>
+            </div>
+
         </section>
+
+        <Footer class="mt-auto" />
 
     </main>
 </template>

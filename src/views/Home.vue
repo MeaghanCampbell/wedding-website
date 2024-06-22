@@ -13,19 +13,19 @@
     let intervalId;
 
     onMounted(() => {
-  intervalId = setInterval(() => {
-    const now = new Date();
-    const diff = Math.abs(targetDate - now);
+        intervalId = setInterval(() => {
+            const now = new Date();
+            const diff = Math.abs(targetDate - now);
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-    timer.days = Math.max(0, days).toString().padStart(2, '0');
-    timer.hours = Math.max(0, hours).toString().padStart(2, '0');
-    timer.minutes = Math.max(0, minutes).toString().padStart(2, '0');
-  }, 1000);
-});
+            timer.days = Math.max(0, days).toString().padStart(2, '0');
+            timer.hours = Math.max(0, hours).toString().padStart(2, '0');
+            timer.minutes = Math.max(0, minutes).toString().padStart(2, '0');
+        }, 1000);
+    });
 
     onUnmounted(() => {
       clearInterval(intervalId);

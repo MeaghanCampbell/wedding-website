@@ -342,6 +342,20 @@ const guestList = [
   ],
   [
     "Samantha Presti"
+  ],
+  [
+    'Ryan Sullivan'
+  ],
+  [
+    'Colin Sullivan'
+  ],
+  [
+    'Jennifer Hunt',
+    'Jason Hunt'
+  ],
+  [
+    'Meaghan de Campos',
+    'Jorge de Campos'
   ]
 ];
   

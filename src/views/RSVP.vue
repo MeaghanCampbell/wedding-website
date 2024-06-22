@@ -1,6 +1,7 @@
 <script setup>
     import { ref, reactive } from 'vue';
     import Nav from '@/components/Nav.vue';
+    import Footer from '../components/Footer.vue'
     import guestList from '@/guest-list';
 
     const firstName = ref('');
@@ -73,7 +74,7 @@
 </script>
 
 <template>
-    <main class="gradient-background">
+    <main class="gradient-background flex flex-col min-h-screen">
 
         <Nav />
 
@@ -126,6 +127,9 @@
                 </div>
 
         </section>
+
+        <Footer class="mt-auto" />
+
 
     </main>
 </template>

@@ -1,6 +1,13 @@
 <script setup>
     import Nav from '../components/Nav.vue'
+    import Footer from '../components/Footer.vue'
     import hamptonInn from '../assets/hampton-inn.jpg'
+    import sanderling from '../assets/sanderling.webp'
+    import innAtCorolla from '../assets/inn-at-corolla-light.jpg'
+    import airbnb from '../assets/airbnb.png'
+    import vrbo from '../assets/vrbo.png'
+    import atlantic from '../assets/atlantic.png'
+    import twiddy from '../assets/twiddy.png'
     import { RouterLink } from 'vue-router'
 
 </script>
@@ -36,21 +43,57 @@
                     <p>~3 hour drive to Corolla</p>
                 </div>
             </div>
-            <p class="text-3xl sm:text-4xl montserrat-light text-center playfair-bold mt-14 sm:mt-16">Where to stay</p>
-            <p class="text-center mt-5 mb-10">info coming soon</p>
-            <div>
-                <div class="max-w-xs bg-white p-4 rounded-lg flex flex-col justify-center">
-                    <div>
-                        <img :src="hamptonInn" alt="hampton inn" class="rounded-lg" />
+            <p class="text-3xl sm:text-4xl montserrat-light text-center playfair-bold mt-14 sm:mt-16 mb-10">Where to stay</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="max-w-xs mx-auto bg-white p-4 rounded-lg flex flex-col items-center">
+                    <div style="width:17rem;" class="h-48 relative">
+                        <img :src="hamptonInn" alt="hampton inn" class="absolute w-full h-full object-cover rounded-lg" />
                     </div>
                     <p class="text-lg font-semibold mb-3 mt-3 text-center bottom-border pb-2">Hampton Inn & Suites <br /><span class="font-normal">Outer Banks / Corolla - Hilton</span></p>
-                    <p class="mb-3 text-center">text</p>
+                    <p class="mb-3 text-center text-sm">The Hampton Inn is directly next to the Pine Island Lodge.</p>
                     <a href="https://www.hilton.com/en/hotels/obxnchx-hampton-suites-outer-banks-corolla/" target="_blank" class="blue px-4 py-2 rounded btn-bg transition montserrat-bold tracking-wide text-xl flex justify-center">
                         <span class="text-center">Book</span>
                     </a>
                 </div>
+                <div class="max-w-xs mx-auto bg-white p-4 rounded-lg flex flex-col items-center">
+                    <div style="width:17rem;" class="h-48 relative">
+                        <img :src="sanderling" alt="sanderling" class="absolute w-full h-full object-cover rounded-lg" />
+                    </div>
+                    <p class="text-lg font-semibold mb-3 mt-3 text-center bottom-border pb-2">The Sanderling Resort <br /><span class="font-normal">Outer Banks / Duck</span></p>
+                    <p class="mb-3 text-center text-sm">The Sanderling is 6 minutes (driving) from the Pine Island Lodge.</p>
+                    <a href="https://www.sanderling-resort.com/" target="_blank" class="blue px-4 py-2 rounded btn-bg transition montserrat-bold tracking-wide text-xl flex justify-center">
+                        <span class="text-center">Book</span>
+                    </a>
+                </div>
+                <div class="max-w-xs mx-auto bg-white p-4 rounded-lg flex flex-col items-center">
+                    <div style="width:17rem;" class="h-48 relative">
+                        <img :src="innAtCorolla" alt="inn at corolla" class="absolute w-full h-full object-cover rounded-lg" />
+                    </div>
+                    <p class="text-lg font-semibold mb-3 mt-3 text-center bottom-border pb-2">Inn at Corolla<br /><span class="font-normal">Outer Banks / Corolla</span></p>
+                    <p class="mb-3 text-center text-sm">The Inn at Corolla is 14 minutes (driving) from the Pine Island Lodge.</p>
+                    <a href="https://www.innatcorolla.com/" target="_blank" class="blue px-4 py-2 rounded btn-bg transition montserrat-bold tracking-wide text-xl flex justify-center">
+                        <span class="text-center">Book</span>
+                    </a>
+                </div>
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                <a href="https://www.twiddy.com/" target="_blank" class="bg-white rounded-lg p-4 transition hover:shadow-lg max-w-xs mx-auto">
+                    <img :src="twiddy" alt="twiddy vacation rentals" />
+                </a>
+                <a href="https://www.atlanticrealty-nc.com/" target="_blank" class="bg-white rounded-lg p-4 transition hover:shadow-lg max-w-xs mx-auto">
+                    <img :src="atlantic" alt="Atlantic Realty" />
+                </a>
+                <a href="https://www.airbnb.com/" target="_blank" class="bg-white rounded-lg p-4 transition hover:shadow-lg max-w-xs mx-auto">
+                    <img :src="airbnb" alt="AirBnb" />
+                </a>
+                <a href="https://www.vrbo.com/" target="_blank" class="bg-white rounded-lg p-4 transition hover:shadow-lg max-w-xs mx-auto">
+                    <img :src="vrbo" alt="VRBO" />
+                </a>
+            </div>
+            
         </section>
+
+        <Footer />
 
     </main>
 </template>
