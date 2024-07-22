@@ -76,6 +76,7 @@
                     </a>
                 </div>
             </div>
+            <p class="text-center mt-10">In addition to hotels, there are plenty of rental homes in the area available at the following links:</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
                 <a href="https://www.twiddy.com/" target="_blank" class="bg-white rounded-lg p-4 transition hover:shadow-lg max-w-xs mx-auto">
                     <img :src="twiddy" alt="twiddy vacation rentals" />

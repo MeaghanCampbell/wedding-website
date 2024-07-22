@@ -77,7 +77,7 @@
             </div>
 
             <div class="mt-8">
-                <p class="blue italic text-sm">*We don't care what you wear as long as you feel your best, but we thought this could be a fun opportunity to dress up if you choose. Join us in wearing something something fancy and beachy!</p>
+                <p class="blue italic text-sm">*We don't care what you wear as long as you feel your best, but we thought this could be a fun opportunity to dress up if you choose. Join us in wearing something fancy and beachy!</p>
             </div>
 
         </section>
