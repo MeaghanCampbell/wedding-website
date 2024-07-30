@@ -19,7 +19,7 @@ const searchParty = () => {
     thankYou.value = false;
   }
   invite.value = true;
-  const fullName = `${firstName.value} ${lastName.value}`.toLowerCase();
+  const fullName = `${firstName.value.trim()} ${lastName.value.trim()}`.toLowerCase();
   searchResults.value = guestList.filter(party =>
     party.some(member =>
       member.toLowerCase().includes(fullName)
@@ -87,37 +87,36 @@ const submitRSVP = function() {
       </div>
       <div v-if="invite">
         <form @submit.prevent="submitRSVP" v-if="searchResults.length > 0" class="mt-10">
-          <div class="grid grid-cols-4 font-bold bottom-border items-end pb-1 mb-4 text-sm">
-            <p class="col-span-2">Name</p>
+          <div class="grid grid-cols-3 sm:grid-cols-4 font-bold bottom-border items-end pb-1 mb-4 text-sm">
+            <p class="sm:col-span-2">Name</p>
             <p>Attending<br />Thursday</p>
             <p>Attending<br />Friday</p>
           </div>
           <div v-for="(party, partyIndex) in searchResults" :key="partyIndex">
             <ul class="space-y-3">
-              <li v-for="(member, memberIndex) in party" :key="memberIndex" class="grid grid-cols-4">
-                <p class="col-span-2">{{ member }}</p>
-                <div class="flex space-x-2 items-center">
-                    <p class="font-semibold text-sm hidden sm:block text-gray-500">No</p>
+              <li v-for="(member, memberIndex) in party" :key="memberIndex" class="grid grid-cols-3 sm:grid-cols-4">
+                <p class="sm:col-span-2">{{ member }}</p>
+                <div class="flex space-x-1 sm:space-x-2 items-center">
+                    <p class="font-semibold text-xs text-gray-500">No</p>
                     <Switch v-model="attendingResults[member].thursday" :class="[attendingResults[member].thursday ? 'bg-emerald-600' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-gray-300 shadow transition-colors duration-200 ease-in-out focus:outline-none']">
                     <span class="sr-only">Attending Thursday</span>
                     <span aria-hidden="true" :class="[attendingResults[member].thursday ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                     </Switch>
-                    <p class="font-semibold text-sm hidden sm:block text-gray-500">Yes</p>
+                    <p class="font-semibold text-xs text-gray-500">Yes</p>
                 </div>
-                <div class="flex space-x-2 items-center">
-                    <p class="font-semibold text-sm hidden sm:block text-gray-500">No</p>
+                <div class="flex space-x-1 sm:space-x-2 items-center">
+                    <p class="font-semibold text-xs text-gray-500">No</p>
                     <Switch v-model="attendingResults[member].friday" :class="[attendingResults[member].friday ? 'bg-emerald-600' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-gray-300 shadow transition-colors duration-200 ease-in-out focus:outline-none']">
                     <span class="sr-only">Attending Friday</span>
                     <span aria-hidden="true" :class="[attendingResults[member].friday ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                     </Switch>
-                    <p class="font-semibold text-sm hidden sm:block text-gray-500">Yes</p>
+                    <p class="font-semibold text-xs text-gray-500">Yes</p>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="flex flex-col-reverse sm:flex-row sm:justify-between mt-4">
+          <div class="mt-4">
             <button type="submit" id="submit-rsvp" class="blue px-4 py-2 rounded btn-bg transition montserrat-bold tracking-wide text-xl text-center">Submit RSVP</button>
-            <p class="text-sm font-bold blue mb-2 sm:mb-0">*toggle switch to update response</p>
           </div>
           <p v-if="showSubmitError" class="error-message mt-2 text-sm text-red-600">We couldn't find anyone with that name. Please try again.</p>
         </form>
