@@ -356,6 +356,10 @@ const guestList = [
   [
     'Meaghan de Campos',
     'Jorge de Campos'
+  ],
+  [
+    "Benjamin Kebles",
+    "Caraline Kebles"
   ]
 ];
   
