@@ -1,0 +1,1 @@
+import{o as r,c as _,b as t}from"./index-DHWzzVcf.js";const a=(e,o)=>{const n=e.__vccOpts||e;for(const[s,c]of o)n[s]=c;return n},l={},d={class:"bg-blue py-6 text-center white"},i=t("p",null,[t("strong",null,"Meadows Wedding")],-1),p=t("p",null,"June 6, 2025 | Corolla, NC",-1),u=[i,p];function f(e,o){return r(),_("div",d,u)}const g=a(l,[["render",f]]);export{g as F};
