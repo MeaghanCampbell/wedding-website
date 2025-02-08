@@ -43,7 +43,8 @@ const guestList = [
     "Patrick Homa"
   ],
   [
-    "Holly Darnell"
+    "Holly Darnell",
+    "Andrew Smith"
   ],
   [
     "Jazmine Quinn",
@@ -84,12 +85,10 @@ const guestList = [
     "Bill Ralston"
   ],
   [
-    "Olivia Campbell",
-    "Michael Soucy"
+    "Olivia Campbell"
   ],
   [
-    "Emily Campbell",
-    "Derek Crowley"
+    "Emily Campbell"
   ],
   [
     "Halle Trabue",
@@ -360,6 +359,10 @@ const guestList = [
   [
     "Benjamin Kebles",
     "Caraline Kebles"
+  ],
+  [
+    "Jazmine George",
+    "Paul Stanley"
   ]
 ];
   
