@@ -363,6 +363,9 @@ const guestList = [
   [
     "Jazmine George",
     "Paul Stanley"
+  ],
+  [
+    "Leksi Rosenberg"
   ]
 ];
   
