@@ -366,6 +366,10 @@ const guestList = [
   ],
   [
     "Leksi Rosenberg"
+  ],
+  [
+    "Patrick Louka",
+    "Guest"
   ]
 ];
   
