@@ -44,7 +44,7 @@ const guestList = [
   ],
   [
     "Holly Darnell",
-    "Andrew Smith"
+    "Andrew"
   ],
   [
     "Jazmine Quinn",
@@ -232,7 +232,7 @@ const guestList = [
     "Wes Ward"
   ],
   [
-    "Elanore Smith"
+    "Eleanor Smith"
   ],
   [
     "Patrick Smith",
