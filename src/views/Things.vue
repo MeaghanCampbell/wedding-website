@@ -17,6 +17,7 @@
     import horses from '../assets/things/horses.jpg'
     import wrightBros from '../assets/things/wright-bros.jpg'
     import carrituckClub from '../assets/things/carrituck-club.webp'
+    import NcCoast from '../assets/nccoast-hp-slider-5.jpg'
 
 </script>
 
@@ -28,6 +29,16 @@
         <section class="px-4 sm:px-8 py-14 sm:py-16 max-w-5xl mx-auto fade-in-smooth flex-grow">
             <p class="text-3xl sm:text-4xl montserrat-light text-center playfair-bold mb-10 blue">Food / Drinks</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <a href="https://nccoastobx.com/" target="_blank"
+                    class="relative max-w-xs mx-auto bg-cover bg-center bg-no-repeat p-10 w-full rounded-lg flex flex-col items-center justify-center text-white transition hover:opacity-80"
+                    :style="{ backgroundImage: `url(${NcCoast})` }">
+                    <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+                    <p class="relative text-lg font-semibold mb-3 mt-3 text-center pb-2">
+                        NC Coast Grill & Bar<br />
+                        <span class="font-normal">Outer Banks / Duck</span>
+                    </p>
+                </a>
 
                 <a href="https://offthewalltaphouse.com/" target="_blank"
                     class="relative max-w-xs mx-auto bg-cover bg-center bg-no-repeat p-10 w-full rounded-lg flex flex-col items-center justify-center text-white transition hover:opacity-80"
